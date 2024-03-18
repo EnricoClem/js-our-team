@@ -46,4 +46,6 @@ const barbaraR = {
 
 const ourTeam = [wayneB,angelaC,walterG,angelaL,scottE,barbaraR]
 
-console.log(ourTeam)
+for(let i = 0; i < ourTeam.length; i++) {
+    console.log(ourTeam[i])
+}
