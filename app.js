@@ -12,40 +12,57 @@ const wayneB = {
     "name": "Wayne Barnett",
     "job": "Founder & CEO",
     "photo": "wayne-barnett-founder-ceo.jpg"
-}
+};
 
 const angelaC = {
     "name": "Angela Caroll",
     "job": "Chief Editor",
     "photo": "angela-caroll-chief-editor.jpg"
-}
+};
 
 const walterG = {
     "name": "Walter Gordon",
     "job": "Office Manager",
     "photo": "walter-gordon-office-manager.jpg"
-}
+};
 
 const angelaL = {
     "name": "Angela Lopez",
     "job": "Social Media Manager",
     "photo": "angela-lopez-social-media-manager.jpg"
-}
+};
 
 const scottE = {
     "name": "Scott Estrada",
     "job": "Developer",
     "photo": "scott-estrada-developer.jpg"
-}
+};
 
 const barbaraR = {
     "name": "Barbara Ramos",
     "job": "Graphic Designer",
     "photo": "barbara-ramos-graphic-designer.jpg"
-}
+};
 
 const ourTeam = [wayneB,angelaC,walterG,angelaL,scottE,barbaraR]
 
 for(let i = 0; i < ourTeam.length; i++) {
-    console.log(ourTeam[i])
-}
+    console.log(ourTeam[i]);
+};
+
+let cardContainer = document.getElementById('card-container');
+
+for(let i = 0; i < ourTeam.length; i++) {
+
+    teamMember = ourTeam[i];
+
+    let teamCard = document.createElement('div');
+    
+    teamCard.innerHTML = `
+    <img class="team-photo" src="img/${teamMember.photo}" alt="">
+    <h1 class="team-name">${teamMember.name}</h1>
+    <h3 class="team-job">${teamMember.job}</h3>`
+
+    cardContainer.append(teamCard)
+
+};
