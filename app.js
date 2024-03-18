@@ -8,3 +8,10 @@
 // Trasformare la stringa foto in una immagine effettiva
 // Organizzare i singoli membri in card/schede
 
+const wayne = {
+    "name": "Wayne Barnett",
+    "job": "Founder & CEO",
+    "photo": "wayne-barnett-founder-ceo.jpg"
+}
+
+console.log(wayne['name'], wayne['job'], wayne['photo'])
