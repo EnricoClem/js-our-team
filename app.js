@@ -44,4 +44,6 @@ const barbaraR = {
     "photo": "barbara-ramos-graphic-designer.jpg"
 }
 
-console.log(wayne['name'], wayne['job'], wayne['photo'])
+const ourTeam = [wayneB,angelaC,walterG,angelaL,scottE,barbaraR]
+
+console.log(ourTeam)
