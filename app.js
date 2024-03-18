@@ -59,9 +59,15 @@ for(let i = 0; i < ourTeam.length; i++) {
     let teamCard = document.createElement('div');
     
     teamCard.innerHTML = `
-    <img class="team-photo" src="img/${teamMember.photo}" alt="">
-    <h1 class="team-name">${teamMember.name}</h1>
-    <h3 class="team-job">${teamMember.job}</h3>`
+    <img class="team-photo card-img-top" src="img/${teamMember.photo}" alt="">
+    <div class="card-body">
+        <h1 class="team-name card-title">${teamMember.name}</h1>
+    </div>
+    <div class="card-footer text-body-secondary">
+        <h3 class="team-job">${teamMember.job}</h3>
+    </div>`
+
+    teamCard.classList.add('card', 'col-4')
 
     cardContainer.append(teamCard)
 
